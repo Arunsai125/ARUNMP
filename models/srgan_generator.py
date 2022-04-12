@@ -41,7 +41,7 @@ def residual_block(block_input, num_filters, momentum=0.8):
     return x
 
 
-def build_srresnet(scale=4, num_filters=64, num_res_blocks=10):
+def build_srresnet(scale=4, num_filters=64, num_res_blocks=16):
     if scale not in upsamples_per_scale:
         raise ValueError(f"available scales are: {upsamples_per_scale.keys()}")
 
